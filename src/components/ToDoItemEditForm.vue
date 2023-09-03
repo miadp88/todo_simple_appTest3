@@ -41,11 +41,11 @@ export default {
   methods: {
     onSubmit() {
       if (this.newLabel && this.newLabel !== this.label) {
-        this.$emit("item-edited", this.newLabel);
+        this.$emit('item-edited', this.newLabel);
       }
     },
     onCancel() {
-      this.$emit("edit-cancelled");
+      this.$emit('edit-cancelled');
     },
   },
   mounted() {

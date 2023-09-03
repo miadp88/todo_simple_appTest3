@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import ToDoItemEditForm from "./ToDoItemEditForm.vue";
+import ToDoItemEditForm from './ToDoItemEditForm.vue';
 
 export default {
   components: {
@@ -56,14 +56,14 @@ export default {
   },
   methods: {
     deleteToDo() {
-      this.$emit("item-deleted");
+      this.$emit('item-deleted');
     },
     toggleToItemEditForm() {
       console.log(this.$refs.editButton);
       this.isEditing = true;
     },
     itemEdited(newLabel) {
-      this.$emit("item-edited", newLabel);
+      this.$emit('item-edited', newLabel);
       this.isEditing = false;
       this.focusOnEditButton();
     },
