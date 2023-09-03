@@ -32,6 +32,7 @@
     "prettier": "3.0.3",
     "vite": "^4.4.9",
     "vitest": "^0.34.3",
-    "vue-template-compiler": "^2.7.14"
+    "vue-template-compiler": "^2.7.14",
+    "volar-service-vetur": "latest"
   }
 }
