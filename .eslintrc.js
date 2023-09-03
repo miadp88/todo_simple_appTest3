@@ -1,14 +1,42 @@
 module.exports = {
-  root: true,
-  env: {
-    node: true,
+  'env': {
+    'browser': true,
+    'es2021': true,
   },
-  extends: ["plugin:vue/essential", "eslint:recommended"],
-  parserOptions: {
-    parser: "@babel/eslint-parser",
+  'extends': [
+    'eslint:recommended',
+    'plugin:vue/vue3-essential',
+  ],
+  'overrides': [
+    {
+      'env': {
+        'node': true,
+      },
+      'files': [
+        '.eslintrc.{js,cjs}',
+      ],
+      'parserOptions': {
+        'sourceType': 'script',
+      },
+    },
+  ],
+  'parserOptions': {
+    'ecmaVersion': 'latest',
+    'sourceType': 'module',
   },
-  rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+  'plugins': [
+    'vue',
+  ],
+  'rules': {
+    'semi': ['error', 'always'],
+    'no-unused-vars': 'error',
+    'no-console': 'warn',
+    'no-undef': 'error',
+    'indent': ['error', 2],
+    'quotes': ['error', 'single'],
+    'no-trailing-spaces': 'error',
+    'comma-dangle': ['error', 'always-multiline'],
+    'no-multiple-empty-lines': ['error', { 'max': 1 }],
+    'no-extra-parens': 'error',
   },
 };
