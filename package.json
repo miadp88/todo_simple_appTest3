@@ -10,9 +10,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "eslint .",
+    "lint:fix": "nr lint --fix",
     "test": "vitest --globals",
-    "dev": "vite",
-    "preview": "vite preview"
+    "dev": "vite"
   },
   "dependencies": {
     "core-js": "^3.28.0",
@@ -34,7 +34,6 @@
     "vite": "^4.4.9",
     "vitest": "^0.34.3",
     "volar-service-vetur": "latest",
-    "vue-jest": "^4.0.1",
     "vue-template-compiler": "^2.7.14"
   }
 }

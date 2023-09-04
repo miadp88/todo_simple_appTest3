@@ -30,7 +30,6 @@ module.exports = {
   'rules': {
     'semi': ['error', 'always'],
     'no-unused-vars': 'error',
-    'no-undef': 'error',
     'indent': ['error', 2],
     'quotes': ['error', 'single'],
     'no-trailing-spaces': 'error',
