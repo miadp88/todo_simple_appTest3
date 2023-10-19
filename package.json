@@ -31,7 +31,7 @@
     "eslint-plugin-vue": "^9.17.0",
     "jest": "^29.6.4",
     "prettier": "3.0.3",
-    "vite": "^4.4.9",
+    "vite": "^4.5.0",
     "vitest": "^0.34.3",
     "volar-service-vetur": "latest",
     "vue-template-compiler": "^2.7.14"
