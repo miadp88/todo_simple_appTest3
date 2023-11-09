@@ -21,7 +21,7 @@
     "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.19.1",
+    "@babel/eslint-parser": "^7.23.3",
     "@vitejs/plugin-vue": "^4.3.4",
     "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-eslint": "^5.0.8",
